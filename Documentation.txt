@@ -1,0 +1,30 @@
+Voici le suivi de ma documentation qui m'as permis de mener à bien ce projet, je te souhaite une bonne lecture.
+
+En suivant la documentation api twitch, il a fallu que je crée ma clé Client ID et mon access token
+
+Je t'invite à faire de même sur twitchtokengenerator.com et à te crée un compte dev(que tu as surement déja fait) sur twitch 
+
+J'ai choisis d'utiliser Flask pour afficher ma data en local notamment avec ngrok.
+Pourquoi ? Car Flask à une grande communauté et il est facile à prendre en main comparer à d'autres.
+
+Dans un premier temps j'obtenais beaucoup d'informations pas très utiles. 
+J'ai donc determiner ma query facilement sur les informations qui me semblait les plus intéressantes à analyser.
+
+Très vite confronté au problème des informations sensibles, il me fallais un moyen d'analyser Solary pour comprendre comment ils contrôlent l'esport.
+
+Il me fallais passer la barrière d'authentification de la chaîne Solary.
+Pour ce faire j'ai tout d'abord testé sur moi-même car evidemment je recevais error unauthorized status 401 message oauth token is missing.
+Pour palier à ce problème je me suis donc crée un accès token sécurisé appelé Bearer Authentication qui est un scheme http pour accèder à mes informations personnelles.
+
+Après demande d'autorisation via ce token que j'accepte, j'ai la possibilité d'accèder à mes données confidentielles !
+
+Une fois cette information en ma possession, il ne me restait plus qu'a display en local mes résultats et de faire en sorte que cela marche pour toutes les chaînes présentes
+dans l'api twitch !
+
+Pour tester mon script, je t'invite à installer flask, flask_ngrok, wtforms et les différentes librairies que j'ai utilisé si ce n'est pas déja fait ! 
+Je te fait un freeze pour que tu vois les packages que j'ai installer.
+
+Merci de m'avoir lu.
+
+                                                                                                                                                      Nicolas Sarko
+
